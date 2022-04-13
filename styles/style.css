@@ -1,0 +1,111 @@
+html{
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+  }
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+body{
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 16px;
+    text-align: center;
+    background-color: hsl(225, 100%, 94%);
+    background-image: url(../images/pattern-background-mobile.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+#wrapper{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    background-color:  hsl(225, 100%, 98%);
+    border-radius: 2rem;
+    margin: 1.5625rem;
+    max-width: 325px;
+}
+.container>img{
+    max-width: 100%;
+    border-radius: 2rem 2rem 0rem 0rem;
+}
+li{
+    list-style: none;
+}
+.container h2{
+    color: hsl(223, 47%, 23%);
+    font-weight: 900;
+    margin-bottom: 1.2rem;
+}
+.container section p{
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 2rem;
+    color: hsl(224, 23%, 55%);
+}
+section{
+    margin: 1.5625rem;
+}
+section:nth-child(3){
+    background-color: hsl(225, 100%, 94%, 0.4);
+    border-radius: 1rem;
+    padding: 1rem;
+    font-size: 0.8rem;
+
+}
+section:nth-child(3)>ul{
+    display: flex;  
+   
+}
+section:nth-child(3)>ul li{
+    margin-right: 0.9rem;
+    font-weight: 900;
+}
+section:nth-child(3)>ul li h4{
+    font-weight: 900;
+}
+span{
+    text-decoration: underline;
+}
+section:nth-child(3)>ul li:nth-child(3){
+    margin-left: 1rem;
+    margin-top: 1rem;
+}
+button{
+    border: none;
+    border-radius: 1rem;
+    width: 90%;
+    background-color: hsl(245, 75%, 52%);
+    color: hsl(225, 100%, 98%);
+    padding: 1rem;
+    font-size: 1rem;
+    font-weight: 700;
+    box-shadow: 0px 10px 15px -3px hsl(245,75%,52%, 0.3);
+}
+button:hover{
+    background-color: hsl(155, 64%, 48%);
+    transition: background-color 0.3s ease-in-out;
+
+}
+footer p{
+    font-size: 1rem;
+    font-weight: 900;
+    color: hsl(224, 23%, 55%);
+    padding: 1.5rem 2rem 3rem;
+}
+footer p:hover{
+    color: Red;
+    transition: color 0.3s ease-in-out;
+}
+@media screen and (min-width: 1440px) {
+    body {
+      background-image: url(../images/pattern-background-desktop.svg);
+      background-size: contain;
+    }
+  }
